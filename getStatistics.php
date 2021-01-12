@@ -1,11 +1,6 @@
-<?php ?>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
+
 <?php
+
 // put your code here
 include 'dbFunctions.php';
 
@@ -17,6 +12,5 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 mysqli_close($link);
 echo json_encode($stats);
+
 ?>
-    </body>
-</html>
